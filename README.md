@@ -30,10 +30,10 @@ const timeOvers = getTimeOver(excels)
 
 * `excels` `{Array}` 格式为 `年.月`，**值必须与 excels 名一一对应**
 * `config` `{Object}`
-  * `sorting` 默认结果按照 excels 数组顺序排序
+  * `sorting` `{String}` 默认结果按照 excels 数组顺序排序
     * `'asc'` 结果按照日期升序
     * `'desc'` 结果按照日期降序
-  * `excelsPath` `{String}` 默认 excels 放在程序根目录下，如果放在其他地方，需要手动指定其位置
+  * `excelsPath` `{String}` 默认 excels 放在程序根目录下，**如果放在其他地方，需要手动指定其位置**
 
 ### getTimeOn(excels[, config])
 

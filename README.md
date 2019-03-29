@@ -47,7 +47,7 @@ const timeOvers = getTimeOver(excels)
 
 根据 excels 获取所有加班日期数据
 
-其他配置与前几个 API 一样，`config` 可配置 `overtimeStart`，默认 `20`，即 20 点后算当天加班
+其他配置与前几个 API 一样，另外 `config` 可配置 `overtimeStart`，默认 `20`，即 20 点后算当天加班
 
 * `config` `{Object}`
   * overtimeStart `{Number}` 默认 20，如果需要配置 20 点半，则为 `20.5`，其他时间雷同

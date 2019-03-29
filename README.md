@@ -14,7 +14,6 @@ $ npm install ddkq
 
 ```js
 const { getTimeAll, getTimeOn, getTimeOff, getTimeOver } = require('ddkq')
-// 
 const excels = ['2018.11']
 
 const timeAlls = getTimeAll(excels)

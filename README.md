@@ -29,7 +29,7 @@ const timeOvers = getTimeOver(excels)
 
 根据 excels 获取所有打卡时间
 
-* `excels` `{Array}` 格式为 `年.月`，保存 excels 名的数组
+* `excels` `{Array}` 格式为 `年.月`，**值必须与 excels 名一一对应**
 * `config` `{Object}`
   * `sorting` 默认结果按照 excels 数组顺序排序
     * `'asc'` 结果按照日期升序

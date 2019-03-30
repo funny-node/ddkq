@@ -35,9 +35,9 @@ const timeOvers = getTimeOver(excels)
     * `'desc'` 结果按照日期降序
   * `excelsPath` `{String}` 默认 excels 放在程序根目录下，**如果放在其他地方，需要手动指定其位置**
 * return: `{Array<Object>}` 返回数组，数组内每个对象代表该天详细数据
-  * `year` `{String}` 年
-  * `month` `{String}` 月
-  * `day` `{String}` 日
+  * `year` `{Number}` 年
+  * `month` `{Number}` 月
+  * `day` `{Number}` 日
   * `time` `{String}` 时间，格式 `hh:mm`
   * `format` `{String}` 格式化时间，格式 `yyyy-mm-dd`
 

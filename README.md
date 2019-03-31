@@ -28,7 +28,7 @@ const timeOvers = getTimeOver(excels)
 
 根据 excels 获取所有打卡时间
 
-* `excels` `{Array}` 格式为 `yyyy.mm`，**值必须与 excels 名一一对应**
+* `excels` `{Array}` 格式为 `yyyy-mm`，**值必须与 excels 名一一对应**
 * `config` `{Object}`
   * `sorting` `{String}` 默认结果按照 excels 数组顺序排序
     * `'asc'` 结果按照日期升序

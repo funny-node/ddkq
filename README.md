@@ -28,7 +28,7 @@ const timeOvers = getTimeOver(excels)
 
 根据 excels 获取所有打卡时间
 
-* `excels` `{Array}` 格式为 `年.月`，**值必须与 excels 名一一对应**
+* `excels` `{Array}` 格式为 `yyyy.mm`，**值必须与 excels 名一一对应**
 * `config` `{Object}`
   * `sorting` `{String}` 默认结果按照 excels 数组顺序排序
     * `'asc'` 结果按照日期升序
@@ -56,7 +56,7 @@ const timeOvers = getTimeOver(excels)
 其他配置与前几个 API 一样，另外 `config` 可配置 `overtimeStart`，默认 `20`，即 20 点后算当天加班
 
 * `config` `{Object}`
-  * overtimeStart `{Number}` 默认 20，如果需要配置 20 点半，则为 `20.5`，其他时间雷同
+  * `overtimeStart` `{Number}` 默认 20，如果需要配置 20 点半，则为 `20.5`，其他时间雷同
 
 ## License
 

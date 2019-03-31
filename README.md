@@ -38,16 +38,32 @@ const timeOvers = getTimeOver(excels)
   * `year` `{Number}` 年
   * `month` `{Number}` 月
   * `day` `{Number}` 日
-  * `time` `{String}` 时间，格式 `hh:mm`
+  * `punchTimes` `{Array<String>}` 该日打卡时间数组，数组值 `hh:mm` 格式
   * `format` `{String}` 格式化时间，格式 `yyyy-mm-dd`
 
 ### getTimeOn(excels[, config])
 
 根据 excels 获取所有上班打卡数据
 
+* return: `{Array<Object>}` 返回数组，数组内每个对象代表该天详细数据
+  * `year` `{Number}` 年
+  * `month` `{Number}` 月
+  * `day` `{Number}` 日
+  * `time` `{String}` 时间，格式 `hh:mm`
+  * `format` `{String}` 格式化时间，格式 `yyyy-mm-dd`
+  * `timestamp` `{Number}` 该日上班打卡时间戳
+
 ### getTimeOff(excels[, config])
 
 根据 excels 获取所有下班打卡数据
+
+* return: `{Array<Object>}` 返回数组，数组内每个对象代表该天详细数据
+  * `year` `{Number}` 年
+  * `month` `{Number}` 月
+  * `day` `{Number}` 日
+  * `time` `{String}` 时间，格式 `hh:mm`
+  * `format` `{String}` 格式化时间，格式 `yyyy-mm-dd`
+  * `timestamp` `{Number}` 该日下班打卡时间戳
 
 ### getTimeOver(excels[, config])
 
@@ -57,6 +73,13 @@ const timeOvers = getTimeOver(excels)
 
 * `config` `{Object}`
   * `overtimeStart` `{Number}` 默认 20，如果需要配置 20 点半，则为 `20.5`，其他时间雷同
+* return: `{Array<Object>}` 返回数组，数组内每个对象代表该天详细数据
+  * `year` `{Number}` 年
+  * `month` `{Number}` 月
+  * `day` `{Number}` 日
+  * `time` `{String}` 时间，格式 `hh:mm`
+  * `format` `{String}` 格式化时间，格式 `yyyy-mm-dd`
+  * `timestamp` `{Number}` 该加班日下班打卡时间戳
 
 ## License
 
